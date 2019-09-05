@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="org.wit.gallery.org.wit.gallery.activities.GalleryActivity">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints">
+
+    <android.support.design.widget.AppBarLayout
+      android:id="@+id/appBarLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/colorAccent"
+      android:fitsSystemWindows="true"
+      app:elevation="0dip"
+      app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+      <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarAdd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:titleTextColor="@color/colorPrimary" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/appBarLayout"
+      android:fillViewport="true">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputEditText
+          android:id="@+id/galleryTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:hint="@string/hint_galleryTitle"
+          android:inputType="text"
+          android:maxLength="25"
+          android:maxLines="1"
+          android:padding="8dp"
+          android:textColor="@color/colorPrimaryDark"
+          android:textSize="14sp" />
+
+        <android.support.design.widget.TextInputEditText
+          android:id="@+id/description"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:hint="@string/hint_galleryDescription"
+          android:inputType="text"
+          android:maxLength="25"
+          android:maxLines="1"
+          android:padding="8dp"
+          android:textColor="@color/colorPrimaryDark"
+          android:textSize="14sp" />
+
+        <Spinner
+          android:id="@+id/spinner"
+          android:layout_width="355dp"
+          android:layout_height="wrap_content"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          />
+
+        <TextView
+          android:id="@+id/picture"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"/>
+
+        <Button
+          android:id="@+id/chooseImage"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="16dp"
+          android:background="@color/colorAccent"
+          android:paddingTop="8dp"
+          android:paddingBottom="8dp"
+          android:text="@string/button_addImage"
+          android:textColor="@color/colorPrimary"
+          android:textSize="16sp" />
+
+        <ImageView
+          android:id="@+id/galleryImage"
+          android:layout_width="match_parent"
+          android:layout_height="123dp"
+          app:srcCompat="@mipmap/ic_launcher" />
+
+        <Button
+          android:id="@+id/btnAdd"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="16dp"
+          android:background="@color/colorAccent"
+          android:paddingTop="8dp"
+          android:paddingBottom="8dp"
+          android:stateListAnimator="@null"
+          android:text="@string/button_addGallery"
+          android:textColor="@color/colorPrimary"
+          android:textSize="16sp" />
+
+
+      </LinearLayout>
+    </ScrollView>
+
+  </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

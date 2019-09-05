@@ -1,0 +1,26 @@
+<resources>
+  <string name="app_name">AdvancedGallery</string>
+  <string name="hint_galleryTitle">Picture Title</string>
+  <string name="hint_galleryDescription">Description </string>
+  <string name="button_addGallery">Add to Gallery</string>
+  <string name="menu_addGallery">Add</string>
+  <string name="menu_cancelGallery">Cancel</string>
+  <string name="enter_gallery_title"> Please enter a Gallery Title </string>
+  <string name="save_gallery"> Save Pictures </string>
+  <string name="button_addImage"> Add Image </string>
+  <string name="select_gallery_image">Select an image</string>
+  <string name="change_gallery_image">Change an image</string>
+  <string name="button_location">Set Location</string>
+  <string name="title_activity_maps">Map</string>
+  <string name="menu_deleteGallery">Delete</string>
+  <string name="title_activity_gallery_maps">Map</string>
+  <string name="google_maps_key">AIzaSyBY3c7RFvwzs06juEg0nzIU7PVERTIV3U8</string>
+  <string name="title_activity_maps2">Map</string>
+
+  <string-array name="picture">
+    <item>Abstract</item>
+    <item>Scenery</item>
+    <item>Colorful</item>
+    <item>Vivid</item><item>Abstract</item>
+  </string-array>
+</resources>
