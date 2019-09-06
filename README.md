@@ -1,6 +1,4 @@
-# GalleryProject
-
-# AdvancedGallery2
+# AdvancedGallery
 
 # CRUD
 ## CREATE
